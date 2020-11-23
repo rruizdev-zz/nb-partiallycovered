@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NB.PartiallyCovered.Api", "NB.PartiallyCovered.Api\NB.PartiallyCovered.Api.csproj", "{4476DA94-DEBF-46E5-A3E3-1DFFBDF848F5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NB.PartiallyCovered.Api.Tests", "NB.PartiallyCovered.Api.Tests\NB.PartiallyCovered.Api.Tests.csproj", "{7512EDA5-2ECD-4358-B2DE-4D65E0A53593}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4476DA94-DEBF-46E5-A3E3-1DFFBDF848F5} = {4476DA94-DEBF-46E5-A3E3-1DFFBDF848F5}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
