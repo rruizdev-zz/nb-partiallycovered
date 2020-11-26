@@ -4,30 +4,30 @@ using System;
 namespace NB.PartiallyCovered.Api.Models
 {
     [Serializable]
-    public class Car
+    public record Car
     {
         [JsonProperty(PropertyName = "id")]
-        public int Id { get; set; }
+        public int Id { get; init; }
 
         [JsonProperty(PropertyName = "car")]
-        public string Name { get; set; }
+        public string Name { get; init; }
 
         [JsonProperty(PropertyName = "car_model")]
-        public string Model { get; set; }
+        public string Model { get; init; }
 
         [JsonProperty(PropertyName = "car_color")]
-        public string Color { get; set; }
+        public string Color { get; init; }
 
         [JsonProperty(PropertyName = "car_model_year")]
-        public int Year { get; set; }
+        public int Year { get; init; }
 
         [JsonProperty(PropertyName = "car_vin")]
-        public string Patent { get; set; }
+        public string Patent { get; init; }
 
         [JsonProperty(PropertyName = "price")]
-        public string Price { get; set; }
+        public string Price { get; init; }
 
         [JsonProperty(PropertyName = "availability")]
-        public bool Availability { get; set; }
+        public bool Availability { get; init; }
     }
 }
